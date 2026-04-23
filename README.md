@@ -1,4 +1,4 @@
-# hi, i'm platon 👋
+# hi, I'm platon 👋
 
 frontend developer with commercial experience in product development.
 
