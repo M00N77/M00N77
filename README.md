@@ -1,4 +1,4 @@
-<h1 align="center">Platon Korolev </h1>
+<h1 align="center">Platon Korolev</h1>
 
 <p align="center">
   frontend developer • vue / react / typescript
@@ -18,83 +18,113 @@
 
 ## about
 
-frontend developer with commercial experience in **b2b / b2c product development**.
+i’m a frontend developer focused on building clean, usable and maintainable web interfaces.
 
-my main focus:
-- building and improving product interfaces
-- refactoring legacy code
-- integrating frontend with APIs
-- working with real production logic, not only demo projects
+my main interests are:
 
-i participated in migration of a **production project from Vue 2 to Vue 3**, worked on **feature development, bug fixing, refactoring and API integration**.
+- product interfaces
+- vue / react applications
+- frontend architecture
+- api integration
+- refactoring and improving existing code
+- writing code that is easy to read and extend
 
----
-
-## commercial background
-
-in commercial frontend development i worked on:
-
-- support and development of **Vue.js** interfaces in a production project
-- migration of parts of the system from **Vue 2 to Vue 3**
-- adaptation of client logic to **Composition API**
-- implementation of new product features
-- refactoring of legacy code and improving module structure
-- bug fixing on the UI side and at the API integration layer
-- handling **REST API** requests, loading states, errors and frontend-backend data flow
+i like working with real product logic, understanding how data moves through the interface, and turning messy requirements into clear user flows.
 
 ---
 
 ## tech stack
 
-**frontend**  
-Vue.js, React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS
+**frontend**
 
-**tools**  
-Git, REST API, Pinia, VS Code, Linux
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
+![React](https://img.shields.io/badge/React-111827?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-1f2937?style=for-the-badge&logo=typescript&logoColor=3178C6)
+![JavaScript](https://img.shields.io/badge/JavaScript-1f2937?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![HTML5](https://img.shields.io/badge/HTML5-1f2937?style=for-the-badge&logo=html5&logoColor=E34F26)
+![CSS3](https://img.shields.io/badge/CSS3-1f2937?style=for-the-badge&logo=css3&logoColor=1572B6)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-1f2937?style=for-the-badge&logo=tailwindcss&logoColor=38B2AC)
 
-**basic backend understanding**  
-Node.js, PostgreSQL, Prisma
+**tools & workflow**
+
+![Git](https://img.shields.io/badge/Git-1f2937?style=for-the-badge&logo=git&logoColor=F05032)
+![REST API](https://img.shields.io/badge/REST_API-1f2937?style=for-the-badge)
+![Linux](https://img.shields.io/badge/Linux-1f2937?style=for-the-badge&logo=linux&logoColor=FCC624)
+![VS Code](https://img.shields.io/badge/VS_Code-1f2937?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
+
+**familiar with**
+
+![Node.js](https://img.shields.io/badge/Node.js-1f2937?style=for-the-badge&logo=nodedotjs&logoColor=339933)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1f2937?style=for-the-badge&logo=postgresql&logoColor=4169E1)
+![Prisma](https://img.shields.io/badge/Prisma-1f2937?style=for-the-badge&logo=prisma&logoColor=white)
 
 ---
 
 ## featured projects
 
 ### [table-crm-mobile-order](https://github.com/M00N77/table-crm-mobile-order)
-mobile order form webapp built with TypeScript.  
-focus: **form logic, API integration, mobile-first flow**
 
-### [gym_landing](https://github.com/M00N77/gym_landing)
-responsive landing page project.  
-focus: **adaptive layout, clean UI, visual presentation**
+mobile order form web app built with **Next.js / TypeScript**.
 
-### [football_landing](https://github.com/M00N77/football_landing)
-landing page project.  
-focus: **responsive frontend, styling, page composition**
+focus:
+
+- mobile-first interface
+- form logic
+- api integration
+- order creation flow
+- clean project structure
 
 ---
 
-## what i'm looking for
+### [gym_landing](https://github.com/M00N77/gym_landing)
 
-i’m looking for opportunities as:
-- **frontend developer**
-- **junior+ frontend developer**
-- **junior fullstack developer**
+responsive landing page.
 
-most interesting to me:
-- product teams
-- real business interfaces
-- frontend architecture and refactoring
-- API integration
-- growth in React, TypeScript and fullstack fundamentals
+focus:
+
+- adaptive layout
+- clean sections
+- visual composition
+- frontend markup practice
+
+---
+
+### [football_landing](https://github.com/M00N77/football_landing)
+
+landing page project.
+
+focus:
+
+- responsive frontend
+- styling
+- page composition
+- ui structure
 
 ---
 
 ## current focus
 
-- deepening **React + TypeScript**
-- improving **frontend architecture** skills
-- strengthening **Node.js / PostgreSQL / Prisma** fundamentals
-- making pet projects cleaner and more production-like
+currently improving:
+
+- react + typescript
+- frontend architecture
+- api integration patterns
+- clean component structure
+- node.js / postgresql fundamentals
+- production-like pet projects
+
+---
+
+## looking for
+
+i’m open to frontend opportunities where i can work on:
+
+- vue / react applications
+- product interfaces
+- api-driven frontend
+- refactoring and code quality
+- real business logic
+- growing inside a strong engineering team
 
 ---
 
