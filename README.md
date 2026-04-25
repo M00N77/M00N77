@@ -62,6 +62,25 @@ i like working with real product logic, understanding how data moves through the
 
 ## featured projects
 
+### [admin-panel](https://github.com/M00N77/admin-panel)
+
+admin panel test task built with **React / TypeScript / Vite / Consta UI**.
+
+[Live demo](https://admin-panel-seven-lac.vercel.app/) 
+
+focus:
+
+- api-driven frontend
+- GoREST API integration
+- users and posts lists
+- pagination from response headers
+- details pages with comments
+- access token flow
+- loading / error / empty states
+- clean React project structure
+
+---
+
 ### [table-crm-mobile-order](https://github.com/M00N77/table-crm-mobile-order)
 
 mobile order form web app built with **Next.js / TypeScript**.
