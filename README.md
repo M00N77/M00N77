@@ -18,7 +18,7 @@
 
 ## about
 
-i’m a frontend developer focused on building clean, usable and maintainable web interfaces.
+i'm a frontend developer focused on building clean, usable and maintainable web interfaces.
 
 my main interests are:
 
@@ -57,16 +57,41 @@ i like working with real product logic, understanding how data moves through the
 ![Node.js](https://img.shields.io/badge/Node.js-1f2937?style=for-the-badge&logo=nodedotjs&logoColor=339933)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1f2937?style=for-the-badge&logo=postgresql&logoColor=4169E1)
 ![Prisma](https://img.shields.io/badge/Prisma-1f2937?style=for-the-badge&logo=prisma&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-1f2937?style=for-the-badge&logo=docker&logoColor=2496ED)
+![Python](https://img.shields.io/badge/Python-1f2937?style=for-the-badge&logo=python&logoColor=3776AB)
 
 ---
 
 ## featured projects
 
+### [TelegramHelper](https://github.com/M00N77/telegramhelper)
+
+ai-powered assistant for pm / dev teams built in a hackathon sprint.
+
+evolved from a personal assistant into a full team pm tool running in telegram groups.
+
+**stack:** `python` `aiogram 3` `telethon` `sqlalchemy async` `postgresql` `qdrant` `openai` `gemini` `groq` `docker`
+
+key features:
+
+- natural language interface — write to the bot like a human, the llm agent understands intent
+- meeting transcription → summary → kanban tasks in YouGile (one flow)
+- burnout analysis based on outgoing message tone
+- daily standups, blocker escalation, anonymous pulse surveys
+- real-time message mirroring via MTProto userbot
+- 9 background tasks running in a single asyncio event loop
+- fernet/aes encryption for all api keys and session data
+- rbac with director / member roles and approval flow
+
+> finalist project — Цифровой прорыв (national hackathon, competed with middle/senior teams)
+
+---
+
 ### [admin-panel](https://github.com/M00N77/admin-panel)
 
 admin panel test task built with **React / TypeScript / Vite / Consta UI**.
 
-[Live demo](https://admin-panel-seven-lac.vercel.app/) 
+[Live demo](https://admin-panel-seven-lac.vercel.app/)
 
 focus:
 
@@ -126,17 +151,17 @@ focus:
 currently improving:
 
 - react + typescript
-- frontend architecture
+- fullstack development (next.js + express + postgresql)
+- frontend architecture & design patterns
 - api integration patterns
-- clean component structure
-- node.js / postgresql fundamentals
-- production-like pet projects
+- docker & deployment (railway, vercel)
+- ai-assisted development workflow
 
 ---
 
 ## looking for
 
-i’m open to frontend opportunities where i can work on:
+i'm open to frontend opportunities where i can work on:
 
 - vue / react applications
 - product interfaces
