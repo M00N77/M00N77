@@ -64,7 +64,7 @@ i like working with real product logic, understanding how data moves through the
 
 ## featured projects
 
-### [TelegramHelper](https://github.com/M00N77/telegramhelper)
+### [TelegramHelper](https://github.com/M00N77/tg-helper)
 
 ai-powered assistant for pm / dev teams built in a hackathon sprint.
 
