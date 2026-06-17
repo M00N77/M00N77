@@ -29,7 +29,7 @@ my main interests are:
 - refactoring and improving existing code
 - writing code that is easy to read and extend
 
-i like working with real product logic, understanding how data moves through the interface, and turning messy requirements into clear user flows.
+i like working with real product logic, understanding how data flows through the interface, and turning messy requirements into clear user experiences.
 
 ---
 
@@ -56,9 +56,8 @@ i like working with real product logic, understanding how data moves through the
 
 ![Node.js](https://img.shields.io/badge/Node.js-1f2937?style=for-the-badge&logo=nodedotjs&logoColor=339933)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1f2937?style=for-the-badge&logo=postgresql&logoColor=4169E1)
-![Prisma](https://img.shields.io/badge/Prisma-1f2937?style=for-the-badge&logo=prisma&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-1f2937?style=for-the-badge&logo=docker&logoColor=2496ED)
-![Python](https://img.shields.io/badge/Python-1f2937?style=for-the-badge&logo=python&logoColor=3776AB)
+![Next.js](https://img.shields.io/badge/Next.js-1f2937?style=for-the-badge&logo=nextdotjs&logoColor=white)
 
 ---
 
@@ -87,6 +86,24 @@ key features:
 
 ---
 
+### [Saveur - Table Booking](https://github.com/M00N77/saveur-table-booking)
+
+restaurant table booking page built with **Next.js 16 / React 19 / TypeScript / Tailwind CSS 4 / Vitest**.
+
+[Live demo](https://saveur-table-booking.vercel.app)
+
+technical decisions worth noting:
+
+- **pure utility layer** — `generateTimeSlots` and `formatPhoneNumber` are framework-agnostic pure functions in `utils/`, not hooks. portable, independently testable, zero React coupling
+- **form management** — React Hook Form + Zod with schema declared at module level (not inside component), avoiding unnecessary recreation on each render
+- **`useWatch` over `watch`** — subscribes only to the `time` field, no cascading re-renders across the whole form
+- **`React.memo` on Select** — compares `value`, `error`, `disabled`, `options`. sibling field input does not trigger Select re-render
+- **dynamic import for react-day-picker** — calendar chunk loads only on date input click, not in the initial bundle
+- **`AbortController` in click-outside effects** — guarantees listener cleanup on unmount, no memory leaks
+- **57 tests** covering all edge cases including partial phone input, international prefixes, and malformed strings
+
+---
+
 ### [admin-panel](https://github.com/M00N77/admin-panel)
 
 admin panel test task built with **React / TypeScript / Vite / Consta UI**.
@@ -95,67 +112,21 @@ admin panel test task built with **React / TypeScript / Vite / Consta UI**.
 
 focus:
 
-- api-driven frontend
 - GoREST API integration
-- users and posts lists
-- pagination from response headers
+- users and posts lists with pagination from response headers
 - details pages with comments
 - access token flow
 - loading / error / empty states
-- clean React project structure
-
----
-
-### [table-crm-mobile-order](https://github.com/M00N77/table-crm-mobile-order)
-
-mobile order form web app built with **Next.js / TypeScript**.
-
-focus:
-
-- mobile-first interface
-- form logic
-- api integration
-- order creation flow
-- clean project structure
-
----
-
-### [gym_landing](https://github.com/M00N77/gym_landing)
-
-responsive landing page.
-
-focus:
-
-- adaptive layout
-- clean sections
-- visual composition
-- frontend markup practice
-
----
-
-### [football_landing](https://github.com/M00N77/football_landing)
-
-landing page project.
-
-focus:
-
-- responsive frontend
-- styling
-- page composition
-- ui structure
 
 ---
 
 ## current focus
 
-currently improving:
+currently building:
 
-- react + typescript
-- fullstack development (next.js + express + postgresql)
+- fullstack pet project — next.js + express + postgresql (raw, no orm) in a monorepo
+- ai-assisted development workflow (opencode cli + deepseek)
 - frontend architecture & design patterns
-- api integration patterns
-- docker & deployment (railway, vercel)
-- ai-assisted development workflow
 
 ---
 
@@ -164,10 +135,9 @@ currently improving:
 i'm open to frontend opportunities where i can work on:
 
 - vue / react applications
-- product interfaces
+- product interfaces with real business logic
 - api-driven frontend
 - refactoring and code quality
-- real business logic
 - growing inside a strong engineering team
 
 ---
