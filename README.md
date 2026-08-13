@@ -1,17 +1,17 @@
 <h1 align="center">Platon Korolev</h1>
 
 <p align="center">
-  fullstack developer • vue / react / node.js / typescript
+  fullstack developer • react / vue / node.js / python
 </p>
 
 <p align="center">
   <a href="https://t.me/manethes">
-    <img src="https://img.shields.io/badge/Telegram-@manethes-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" />
+    <img src="https://img.shields.io/badge/Telegram-@manethes-09090b?style=flat-square&logo=telegram&logoColor=26A5E4" />
   </a>
   <a href="mailto:kplatonglfc@gmail.com">
-    <img src="https://img.shields.io/badge/Email-contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://img.shields.io/badge/Email-contact-09090b?style=flat-square&logo=gmail&logoColor=EA4335" />
   </a>
-  <img src="https://img.shields.io/badge/Location-Moscow-111827?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Location-Moscow-09090b?style=flat-square&logo=googlemaps&logoColor=white" />
 </p>
 
 ---
@@ -23,10 +23,10 @@ i'm a fullstack developer focused on building clean, usable and maintainable web
 my main interests are:
 
 - product interfaces
-- vue / react applications
+- react / vue applications
 - frontend architecture
-- backend logic and REST API design
-- api integration
+- backend logic, api design & sql / nosql databases
+- ai integration (llm routing, mcp, rag)
 - refactoring and improving existing code
 - writing code that is easy to read and extend
 
@@ -36,31 +36,24 @@ i like working with real product logic, understanding how data flows through the
 
 ## tech stack
 
-**frontend**
+**frontend**<br>
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=react,vue,nextjs,ts,js,tailwind,html,css&theme=dark" alt="frontend stack" />
+</a>
+<br><br>
 
-![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
-![React](https://img.shields.io/badge/React-111827?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-1f2937?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-1f2937?style=for-the-badge&logo=typescript&logoColor=3178C6)
-![JavaScript](https://img.shields.io/badge/JavaScript-1f2937?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![HTML5](https://img.shields.io/badge/HTML5-1f2937?style=for-the-badge&logo=html5&logoColor=E34F26)
-![CSS3](https://img.shields.io/badge/CSS3-1f2937?style=for-the-badge&logo=css3&logoColor=1572B6)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-1f2937?style=for-the-badge&logo=tailwindcss&logoColor=38B2AC)
+**backend & databases**<br>
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=nodejs,python,express,postgres,sqlite&theme=dark" alt="backend stack" />
+</a>
+<br>
+<sup>*also working with nosql/vector databases (qdrant) and jwt auth*</sup>
+<br><br>
 
-**backend**
-
-![Node.js](https://img.shields.io/badge/Node.js-1f2937?style=for-the-badge&logo=nodedotjs&logoColor=339933)
-![Express](https://img.shields.io/badge/Express-1f2937?style=for-the-badge&logo=express&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-1f2937?style=for-the-badge&logo=postgresql&logoColor=4169E1)
-![JWT](https://img.shields.io/badge/JWT-1f2937?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
-
-**tools & workflow**
-
-![Git](https://img.shields.io/badge/Git-1f2937?style=for-the-badge&logo=git&logoColor=F05032)
-![REST API](https://img.shields.io/badge/REST_API-1f2937?style=for-the-badge)
-![Docker](https://img.shields.io/badge/Docker-1f2937?style=for-the-badge&logo=docker&logoColor=2496ED)
-![Linux](https://img.shields.io/badge/Linux-1f2937?style=for-the-badge&logo=linux&logoColor=FCC624)
-![VS Code](https://img.shields.io/badge/VS_Code-1f2937?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)
+**tools & workflow**<br>
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=git,docker,linux,vscode&theme=dark" alt="tools" />
+</a>
 
 ---
 
@@ -86,6 +79,23 @@ key features:
 - rbac with director / member roles and approval flow
 
 > finalist project — Цифровой прорыв (national hackathon, competed with middle/senior teams)
+
+---
+
+### [MCP Telegram Server](https://github.com/M00N77/mcp_telegram)
+
+model context protocol (mcp) server connecting llm agents (like claude) directly to the telegram bot api. turns a stateless push-api into a stateful, discoverable context for ai.
+
+**stack:** `python 3.12` `fastmcp` `aiosqlite` `httpx`
+
+key features:
+- architectural workaround for api constraints — background listener continuously syncs updates to a local db, allowing mcp tools to perform discovery and history reads that telegram natively lacks
+- concurrency-safe storage — sqlite in wal mode prevents locks between the async listener (writes) and mcp tools (reads)
+- idempotent operations — composite keys (`chat_id`, `message_id`) and offset tracking ensure at-least-once delivery without duplicate records after network restarts
+- human-in-the-loop — built-in approval gate for the `send_message` tool to prevent unverified ai actions
+- token-optimized parsing — plain text history formatting natively understood by llms, avoiding json escaping issues
+
+> designed as a robust local adapter to give llms persistent memory over stateless platforms
 
 ---
 
@@ -141,7 +151,7 @@ currently building:
 
 i'm open to fullstack / frontend opportunities where i can work on:
 
-- vue / react applications with real backend logic
+- react / vue applications with real backend logic
 - product interfaces with real business logic
 - api-driven, database-backed systems
 - refactoring and code quality
@@ -153,3 +163,4 @@ i'm open to fullstack / frontend opportunities where i can work on:
 
 - telegram: [@manethes](https://t.me/manethes)
 - email: **kplatonglfc@gmail.com**
+- 
