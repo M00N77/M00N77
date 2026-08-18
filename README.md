@@ -32,7 +32,7 @@ Fullstack developer focused on building clean, high-performance, and resilient w
 </p>
 
 <p align="center">
-  <code>TanStack Query v5</code> • <code>Zustand</code> • <code>Qdrant Vector DB</code> • <code>FastMCP</code> • <code>raw pg.Pool</code> • <code>OAuth 2.0 / JWT</code> • <code>MSW</code> • <code>Vitest</code>
+  <code>TanStack Query v5</code> • <code>Zustand</code> • <code>Qdrant Vector DB</code> • <code>FastMCP</code> • <code>raw pg.Pool</code> • <code>OAuth 2.0 / JWT</code> • <code>MSW</code> 
 </p>
 
 ---
